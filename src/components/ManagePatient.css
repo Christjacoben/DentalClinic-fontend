@@ -1,0 +1,113 @@
+.manage-Patient-container {
+  position: absolute;
+  width: 80%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+}
+.manage-Patient-container-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.manage-Patient-container-top img {
+  width: 32%;
+  padding: 5px;
+}
+.manage-Patient-container-bottom {
+  flex: 1;
+  overflow-y: scroll;
+  max-height: 460px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.manage-Patient-container-bottom::-webkit-scrollbar {
+  display: none;
+}
+
+.manage-Patient-container-bottom h4 {
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.manage-Patient-container-bottom table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow: hidden;
+
+  margin-top: -16px;
+}
+
+.manage-Patient-container-bottom th,
+.manage-Patient-container-bottom td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.manage-Patient-container-bottom th {
+  background: #c39e79;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.manage-Patient-container-bottom tr:nth-child(even) {
+  background: #dbccb6;
+}
+
+.manage-Patient-container-bottom tr:hover {
+  background: #f1e7db;
+  transition: background 0.2s;
+}
+.mark-as-done-button {
+  border: none;
+  background-color: #0c8135;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.mark-as-done-button:hover {
+  background-color: #14a44d;
+}
+.reschedule-button {
+  border: none;
+  background-color: rgb(238, 149, 33);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.reschedule-button:hover {
+  background-color: rgb(197, 138, 50);
+}
+.reschedule-component {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  height: 50%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 50%;
+  border-radius: 10px;
+}
+.reschedule-component-top {
+  display: flex;
+  justify-content: center;
+}
+.reschedule-component-top img {
+  width: 55%;
+}
+.reschedule-close {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  color: red;
+  font-size: 29px;
+}

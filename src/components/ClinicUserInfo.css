@@ -1,0 +1,80 @@
+.clinic-user-info-container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+.clinic-user-info-top {
+  display: flex;
+  justify-content: center;
+}
+.clinic-user-info-top img {
+  width: 50%;
+}
+.clinic-user-info-bottom {
+  flex: 1;
+  display: flex;
+}
+.clinic-user-info-bottom-right {
+  flex: 1;
+}
+.clinic-user-info-bottom-left {
+  flex: 1;
+}
+.clinic-user-info-bottom-left-items {
+  margin: 25px;
+}
+.clinic-user-info-bottom-left-items span {
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #c39e79;
+}
+.clinic-user-info-bottom-right-items span {
+  margin-top: 40px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #c39e79;
+}
+.clinic-user-info-bottom-left-items p {
+  margin-top: 40px;
+  font-weight: bold;
+  color: #c39e79;
+}
+.clinic-user-info-bottom-left-items input {
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: #c39e79;
+  border-bottom: 1px solid #c39e79;
+}
+.clinic-user-info-bottom-left-items label {
+  font-size: 19px;
+  font-weight: bold;
+  color: #c39e79;
+}
+.clinic-user-info-bottom-right-items {
+  margin: 25px;
+}
+.clinic-user-info-bottom-right-items input {
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: #c39e79;
+  border-bottom: 1px solid #c39e79;
+}
+.clinic-user-info-bottom-right-items label {
+  font-size: 19px;
+  font-weight: bold;
+  color: #c39e79;
+}
+.clinic-user-info-bottom-right-items button {
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c39e79;
+  color: white;
+  margin-left: 60%;
+  font-weight: bold;
+}

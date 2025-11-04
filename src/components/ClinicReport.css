@@ -1,0 +1,227 @@
+.clinic-report-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  height: 98%;
+}
+.clinic-report-container-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.clinic-report-container-top img {
+  width: 300px;
+  padding: 10px;
+}
+.clinic-report-container-top h4 {
+  font-size: 25px;
+  color: brown;
+  font-weight: bold;
+  margin-top: 9px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.clinic-report-container-bottom {
+  flex: 1;
+}
+.user-card-report {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.clinic-user-appointments-report {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 60%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.clinic-user-appointments-report table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow: hidden;
+
+  margin-top: -16px;
+}
+
+.clinic-user-appointments-report th,
+.clinic-user-appointments-report td {
+  padding: 10px 12px;
+  text-align: left;
+  background-color: rgb(229, 222, 207);
+}
+
+.clinic-user-appointments-report th {
+  background: #c39e79;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.clinic-user-appointments-report tr:nth-child(even) {
+  background: #dbccb6;
+}
+
+.clinic-user-appointments-report tr:hover {
+  background: #f1e7db;
+  transition: background 0.2s;
+}
+.clinic-user-appointments-report h4 {
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.clinic-user-appointments-report-close-btn {
+  color: red;
+  font-size: 30px;
+  right: 0;
+  padding: 10px;
+  position: absolute;
+}
+.list-date {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.report-date-render {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.report-date-render button {
+  border: none;
+  background-color: white;
+  color: grey;
+}
+.btn-per-month {
+  width: 100px;
+  border: none;
+  float: right;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #c39e79;
+  margin-top: 5px;
+  padding: 10px;
+}
+.all-patient {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 340px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.all-patient-table-data table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: -16px;
+}
+.all-patient-table-data {
+  margin-top: 10px;
+}
+.all-patient-table-data th,
+.all-patient-table-data td {
+  padding: 10px 12px;
+  text-align: left;
+  background-color: rgb(229, 222, 207);
+}
+
+.all-patient-table-data th {
+  background: #c39e79;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.all-patient-table-data t tr:nth-child(even) {
+  background: #dbccb6;
+}
+
+.all-patient-table-data tr:hover {
+  background: #f1e7db;
+  transition: background 0.2s;
+}
+.all-patient-table-data h4 {
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.reschedule-component-bottom input {
+  width: 38%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 30px;
+  outline: none;
+}
+.reschedule-btn-submit-to {
+  width: 150px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 200px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: #c39e79;
+}
+.all-procedure {
+  width: 100%;
+  overflow-y: auto;
+  max-height: 340px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.all-procedure-table-data table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: -16px;
+}
+.all-procedure-table-data {
+  margin-top: 10px;
+}
+.all-procedure-table-data th,
+.all-procedure-table-data td {
+  padding: 10px 12px;
+  text-align: left;
+  background-color: rgb(229, 222, 207);
+}
+
+.all-procedure-table-data th {
+  background: #c39e79;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.all-procedure-table-data t tr:nth-child(even) {
+  background: #dbccb6;
+}
+
+.all-procedure-table-data tr:hover {
+  background: #f1e7db;
+  transition: background 0.2s;
+}
+.all-procedure-table-data h4 {
+  text-align: center;
+  color: brown;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

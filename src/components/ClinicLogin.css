@@ -1,0 +1,161 @@
+/* ...existing code... */
+
+.clinic-login-main {
+  inset: 0;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/login-img-design.svg");
+  min-height: 100vh;
+}
+
+.clinic-login-child {
+  inset: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.clinic-login-left {
+  flex: 1;
+}
+
+.clinic-login-form {
+  flex: 1;
+  margin-top: -40px;
+  color: #c39e79;
+  display: flex;
+  margin-left: 300px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clinic-login-form h1 {
+  font-size: 60px;
+}
+
+.login-input {
+  width: 55%;
+  padding: 17px;
+  border-radius: 30px;
+  margin: 10px;
+  display: flex;
+  background-color: #c39e79 !important;
+  align-items: center;
+}
+
+.login-input input {
+  border: none;
+  width: 80%;
+  color: white;
+  background-color: #c39e79 !important;
+  margin-left: 10px;
+  font-size: 17px;
+  outline: none;
+}
+
+.login-input input::placeholder {
+  font-size: 14px;
+  color: white;
+}
+
+.login-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: -29%;
+}
+
+.clinic-login-form button {
+  width: 50%;
+  padding: 17px;
+  color: white;
+  border-radius: 25px;
+  background-color: #c39e79;
+  border: none;
+  font-weight: bold;
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.clinic-login-form button:hover {
+  background-color: #dab693;
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.show-password-checkbox {
+  width: 17px;
+  height: 17px;
+  accent-color: #c39e79;
+}
+
+.login-checkbox label {
+  font-size: 17px;
+}
+
+.signup-indicator {
+  margin-top: 10%;
+  display: flex;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .clinic-login-child {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    position: static;
+  }
+  .clinic-login-left {
+    display: none;
+  }
+  .clinic-login-form {
+    margin-left: 500px;
+    width: 100%;
+    padding: 0 5vw;
+    margin-top: 30px;
+  }
+  .clinic-login-form h1 {
+    font-size: 40px;
+  }
+  .login-input {
+    width: 90%;
+    min-width: 180px;
+  }
+  .clinic-login-form button {
+    width: 80%;
+    font-size: 16px;
+  }
+  .login-checkbox {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .clinic-login-form {
+    padding: 0 2vw;
+    margin-top: 20px;
+  }
+  .clinic-login-form h1 {
+    font-size: 28px;
+  }
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+  .clinic-login-form button {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+  .signup-indicator {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

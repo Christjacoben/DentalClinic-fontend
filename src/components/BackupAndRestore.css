@@ -1,0 +1,78 @@
+.backup-restore-main {
+  display: flex;
+
+  flex-direction: column;
+}
+.backup-restore-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backup-restore-top img {
+  width: 180%;
+  height: 150px;
+}
+.backup-restore-center {
+  flex: 1;
+  text-align: center;
+  color: brown;
+}
+.backup-restore-bottom {
+  flex: 2;
+  overflow-y: scroll;
+  max-height: 360px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.backup-restore-bottom label {
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.backup-restore-bottom select {
+  padding: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid #c39e79;
+  border-radius: 10px;
+}
+.backup-restore-bottom button {
+  float: right;
+  border: none;
+  padding: 10px;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: white;
+  border-radius: 5px;
+  background-color: #c39e79;
+}
+.backup-restore-bottom table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow: hidden;
+}
+
+.backup-restore-bottom th,
+.backup-restore-bottom td {
+  padding: 10px 12px;
+  text-align: left;
+  border: 1px solid #c39e79;
+}
+
+.backup-restore-bottom th {
+  background: #c39e79;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.backup-restore-bottom tr:nth-child(even) {
+  background: #dbccb6;
+}
+
+.backup-restore-bottom tr:hover {
+  background: #f1e7db;
+  transition: background 0.2s;
+}

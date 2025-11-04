@@ -1,0 +1,91 @@
+.clinic-signup-main {
+  inset: 0;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/signup-design-img.svg");
+}
+.clinic-signup-child {
+  inset: 0;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+}
+.clinic-signup-right {
+  flex: 1;
+}
+.clinic-signup-form {
+  flex: 1;
+  display: flex;
+  color: #c39e79;
+  margin-left: -6%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clinic-signup-form h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 55px;
+}
+.clinin-signup-input {
+  width: 48%;
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #c39e79;
+}
+.clinin-signup-input input {
+  border: none;
+  width: 80%;
+  color: white;
+  background-color: #c39e79;
+  margin-left: 10px;
+  font-size: 17px;
+  outline: none;
+}
+.clinin-signup-input input::placeholder {
+  font-size: 14px;
+  color: white;
+}
+.signup-icons {
+  margin-left: 5px;
+}
+.signup-checkbox {
+  display: flex;
+  margin-top: 5px;
+  font-size: 18px;
+  margin-left: -28%;
+  align-items: center;
+}
+.signup-checkbox-indicator {
+  width: 15px;
+  height: 15px;
+
+  accent-color: #c39e79;
+}
+.clinic-signup-form button {
+  width: 40%;
+  padding: 15px;
+  color: white;
+  border-radius: 25px;
+  background-color: #c39e79;
+  border: none;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 18px;
+}
+.clinic-signup-form button:hover {
+  background-color: #ddb791;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+.signup-text {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}

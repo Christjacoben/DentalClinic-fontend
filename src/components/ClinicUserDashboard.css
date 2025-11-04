@@ -1,0 +1,299 @@
+.clinic-user-dashboard {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  background-color: white;
+}
+.clinic-user-dashboard-top {
+  display: flex;
+  height: 12%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c39e79;
+}
+
+.clinic-user-dashboard-bottom {
+  flex: 1;
+}
+.clinic-user-sidebar {
+  position: absolute;
+  width: 250px;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.clinic-side-bar-top {
+  display: flex;
+  justify-content: center;
+  background-color: #c39e79;
+}
+.clinic-side-bar-top img {
+  width: 100%;
+}
+.clinic-side-bar-bottom {
+  flex: 1;
+  background-color: #c39e79;
+}
+.clinic-side-bar-items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+  margin-top: 10px;
+}
+.clinic-side-bar-items p {
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  color: rgb(65, 53, 51);
+}
+.clinic-side-bar-icon {
+  margin-left: 10px;
+}
+.clinic-user-dashboard-top-right img {
+  width: 150px;
+}
+.clinic-user-info {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  top: 25%;
+  right: 25%;
+  z-index: 5;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.clinic-user-info-close-icon {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding: 10px;
+}
+.clinic-user-dashboard-bottom-calendar {
+  position: absolute;
+  top: 13%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+}
+.clinic-user-dashboard-bottom-calendar-left {
+  flex: 3;
+}
+.clinic-user-dashboard-bottom-calendar-right {
+  flex: 1;
+}
+.clinic-user-dashboard-bottom-big-calendar-left {
+  width: 100%;
+  padding: 10px;
+  height: 470px;
+  z-index: -10;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.clinic-setAppoint {
+  position: absolute;
+  z-index: 5;
+  top: 25%;
+  right: 23%;
+  width: 50%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.clinic-user-dashboard-bottom-calendar-left-content {
+  width: 90%;
+  height: 95%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.clinic-user-dashboard-bottom-calendar-left-content h4 {
+  background-color: #c39e79;
+  margin-top: 4px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+.clinic-user-dashboard-bottom-calendar-right-content {
+  width: 116%;
+  margin-top: -1px;
+  border-radius: 10px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: -60px;
+  overflow-y: scroll;
+  max-height: 550px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.clinic-user-dashboard-bottom-calendar-right-content::-webkit-scrollbar {
+  display: none;
+}
+.clinic-user-dashboard-bottom-calendar-right-content p {
+  background-color: #c39e79;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.clinic-user-dashboard-bottom-calendar-right-content table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  overflow: hidden;
+
+  margin-top: -16px;
+}
+
+.clinic-user-dashboard-bottom-calendar-right-content th,
+.clinic-user-dashboard-bottom-calendar-right-content td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.clinic-user-dashboard-bottom-calendar-right-content th {
+  background: #c39e79;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.clinic-user-dashboard-bottom-calendar-right-content tr:nth-child(even) {
+  background: #f8f6f3;
+}
+
+.clinic-user-dashboard-bottom-calendar-right-content tr:hover {
+  background: #f1e7db;
+  transition: background 0.2s;
+}
+
+.clinic-user-dashboard-bottom-calendar-right-content td {
+  color: #4b3f2f;
+  font-size: 15px;
+}
+
+.rbc-header {
+  background-color: #c39e79 !important; /* Your theme color */
+  color: #fff !important;
+
+  font-size: 16px;
+
+  text-align: center;
+}
+.rbc-toolbar button {
+  background-color: #c39e79;
+
+  color: white;
+  border: none;
+  margin: 0 2px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.rbc-toolbar button.rbc-active,
+.rbc-toolbar button:focus {
+  background-color: #c39e79;
+  color: #fff;
+}
+
+.rbc-toolbar button:hover {
+  background-color: #c5ae96;
+
+  color: #fff;
+}
+
+.status-pending {
+  color: grey !important;
+  font-weight: bold;
+
+  border-radius: 6px;
+  text-align: center;
+}
+
+.status-confirmed {
+  color: #3062b3 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.status-finished {
+  color: #059669 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+}
+.note {
+  font-size: 13px;
+}
+.status-finished {
+  color: #059669 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+}
+.status-not-confirmed {
+  color: grey !important;
+  font-weight: bold;
+  border-radius: 6px;
+  font-size: 15px;
+  text-align: center;
+}
+.status-confirmed {
+  color: #ff9800 !important;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+}
+.message {
+  position: absolute;
+  right: 1%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10px;
+  padding: 10px;
+  z-index: 5;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.message p {
+  color: brown;
+}
+
+.message-exit {
+  cursor: pointer;
+  margin-left: 90%;
+}
+.message-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.message-top img {
+  margin-top: -15px;
+  width: 30%;
+}
+.message-bottom {
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+}
+.message-bottom p {
+  padding: 5px;
+}

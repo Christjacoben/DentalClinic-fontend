@@ -1,0 +1,74 @@
+.clinic-landing-page-main {
+  inset: 0;
+  display: flex;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-between;
+  background-image: url("../assets/landing-img-design.svg");
+  min-height: 100vh;
+}
+
+.clinic-left,
+.clinic-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clinic-left button {
+  width: 60%;
+  max-width: 150px;
+  min-width: 120px;
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  color: rgb(94, 93, 93);
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 22%;
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.clinic-left button:hover {
+  transition: ease-in-out 0.5s;
+  color: rgb(78, 78, 78);
+  cursor: pointer;
+  background-color: rgb(238, 236, 236);
+}
+
+@media (max-width: 900px) {
+  .clinic-landing-page-main {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 20px 0;
+  }
+  .clinic-left,
+  .clinic-right {
+    flex: unset;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .clinic-left button {
+    width: 80%;
+    margin-top: 10%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .clinic-landing-page-main {
+    padding: 10px 0;
+  }
+  .clinic-left button {
+    width: 95%;
+    margin-top: 5%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

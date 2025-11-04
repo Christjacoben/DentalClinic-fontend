@@ -1,0 +1,317 @@
+.clinic-admin-dashboard {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  overflow: hidden;
+}
+.clinic-right-content {
+  flex: 1;
+  background-color: white;
+}
+.clinic-sidebar {
+  width: 250px;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  background-color: #c39e79;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+.clinic-sidebar-icons {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.clinic-sidebar-icons p {
+  color: rgb(65, 53, 51);
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.clinic-right-content {
+  display: flex;
+  flex-direction: column;
+}
+.clinic-icons-side {
+  margin-left: 5px;
+}
+.clinic-search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clinic-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.clinic-search-left {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+}
+.clinic-search-right h4 {
+  font-size: 37px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #c39e79;
+  margin-bottom: 20px;
+}
+.clinic-search-left input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #c39e79;
+  border-radius: 10px;
+}
+.clinic-notif {
+  margin-left: 10px;
+}
+.clinic-box-indicator {
+  display: flex;
+  margin-top: -8px;
+  justify-content: space-around;
+}
+.clinic-box {
+  width: 23%;
+  color: #c39e79;
+  padding: 5px;
+  display: flex;
+  height: 98px;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: -10px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  background-color: white;
+  justify-content: space-between;
+}
+.clinic-box img {
+  width: 150px;
+  margin-left: -6px;
+  height: 100px;
+}
+.clinic-box-content {
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  flex-direction: column;
+}
+.clinic-box-content h4 {
+  font-size: 18px;
+}
+.clinic-box-content p {
+  margin-top: -20px;
+  font-size: 18px;
+}
+.clinic-content-right {
+  flex: 1;
+}
+.clinic-content-left {
+  width: 42%;
+}
+.clinic-calendar {
+  margin-left: 8px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.appointment-text {
+  color: white !important;
+  background-color: #c39e79 !important;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.patient-treatment-review {
+  background: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 94%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.patient-treatment-review h4 {
+  color: #2d3a4b;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.review-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.review-row span {
+  width: 80px;
+  font-size: 14px;
+  color: #2d3a4b;
+}
+
+.review-bar-bg {
+  flex: 1;
+  height: 8px;
+  background: #f2f4f7;
+  border-radius: 6px;
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.review-bar {
+  height: 100%;
+  border-radius: 6px;
+}
+
+.review-bar.excellent {
+  width: 90%;
+  background: #2954d6;
+}
+
+.review-bar.great {
+  width: 60%;
+  background: #1db954;
+}
+
+.review-bar.good {
+  width: 40%;
+  background: #f2994a;
+}
+
+.review-bar.average {
+  width: 30%;
+  background: #36c6d3;
+}
+
+.appointments-table-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-top: 9px;
+  width: 87%;
+  margin-left: 8px;
+  max-width: 520px;
+  overflow-y: scroll;
+  max-height: 245px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.appointments-table-container::-webkit-scrollbar {
+  display: none;
+}
+
+.appointments-table-container h4 {
+  color: #2d3a4b;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 9px 8px;
+  text-align: left;
+}
+
+.appointments-table th {
+  color: #7a869a;
+  font-weight: 600;
+  border-bottom: 1px solid #ececec;
+}
+
+.appointments-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #f2f4f7;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #444;
+  background: #eee;
+}
+
+.status-badge.pending {
+  background: #fff7d6;
+  color: #b59b00;
+}
+
+.status-badge.inprogress {
+  background: #e6f0ff;
+  color: #377dff;
+}
+
+.status-badge.completed {
+  background: #d6f5e7;
+  color: #1ca97a;
+}
+.manage-appointment {
+  width: 80%;
+  height: 96%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.manage-patient {
+  width: 80%;
+  height: 96%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.clinic-report {
+  width: 80%;
+  height: 96%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.patient-treatment-review {
+  overflow-y: scroll;
+  max-height: 300px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.patient-treatment-review::-webkit-scrollbar {
+  display: none;
+}
+.manage-user {
+  width: 80%;
+  height: 96%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.backup-restore {
+  width: 80%;
+  height: 96%;
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

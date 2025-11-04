@@ -1,0 +1,84 @@
+.set-appointment-main {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+}
+.set-appointment-main img {
+  width: 40%;
+  margin-left: 30%;
+}
+.set-appointment-main-content {
+  display: flex;
+  flex: 1;
+}
+.set-appointment-main-bottom {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex: 1;
+}
+.set-appointment-main-bottom select {
+  width: 50%;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  color: #c39e79;
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 1px solid grey;
+}
+.set-appointment-main-bottom p {
+  font-weight: bold;
+  margin: 30px;
+  margin-top: 10px;
+  color: #c39e79;
+  font-size: 18px;
+  margin-bottom: -5px;
+  margin-left: 10px;
+}
+.set-appointment-main-bottom label {
+  margin-left: 10px;
+  color: #c39e79;
+  font-weight: bold !important;
+}
+
+.set-appointment-main-top {
+  flex: 1;
+}
+.set-appointment-main-top p {
+  margin-top: 15px !important;
+  font-weight: bold;
+  margin: 20px;
+  font-size: 18px;
+  margin-left: 47px;
+  color: #c39e79;
+}
+.time-picker {
+  margin-top: -30px !important;
+  width: 50%;
+}
+.set-appointment-main-bottom-items {
+  display: flex;
+  align-items: center;
+}
+.button-set-appointment {
+  width: 150px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 50%;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #c39e79;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.MuiClockNumber-root[data-value="7"],
+.MuiClockNumber-root[data-value="8"],
+.MuiClockNumber-root[data-value="6"],
+.MuiClockNumber-root[data-value="5"],
+.MuiClockNumber-root[data-value="4"] {
+  display: none !important;
+}
