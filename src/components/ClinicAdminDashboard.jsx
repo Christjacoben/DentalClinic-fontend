@@ -40,9 +40,11 @@ function ClinicAdminDashboard() {
     const fetchAppointments = async () => {
       try {
         const res = await axios.get(
-          `${import.meta.env.VITE_API_URL}/api/appointments`,
+     
+        "https://dentalclinic-backend-mtue.onrender.com/api/appointments",
           { withCredentials: true }
         );
+        console.log("data", res.data)
         setAppointments(res.data);
       } catch (err) {
         console.error(
@@ -145,7 +147,7 @@ function ClinicAdminDashboard() {
   const handleLogout = async () => {
     try {
       await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/logout`,
+        "https://dentalclinic-backend-mtue.onrender.com/api/logout",
         {},
         { withCredentials: true }
       );
