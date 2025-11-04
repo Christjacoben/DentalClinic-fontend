@@ -37,7 +37,8 @@ function ClinicLogin() {
     setTimeout(async () => {
       try {
         const res = await axios.post(
-          `${import.meta.env.VITE_API_URL}/api/login`,
+          
+          "https://dentalclinic-backend-mtue.onrender.com/api/login",
           { userName, password, recaptchaToken },
           { withCredentials: true }
         );
