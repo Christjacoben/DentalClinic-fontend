@@ -1,6 +1,7 @@
 {
   "name": "sunga",
   "private": true,
+  "proxy": "https://dentalclinic-backend-mtue.onrender.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
