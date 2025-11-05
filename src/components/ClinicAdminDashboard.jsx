@@ -36,15 +36,13 @@ function ClinicAdminDashboard() {
   const [calendarView, setCalendarView] = useState("month");
   const [calendarDate, setCalendarDate] = useState(new Date());
 
-  useEffect(() => {
+ useEffect(() => {
     const fetchAppointments = async () => {
       try {
         const res = await axios.get(
-     
-        "https://dentalclinic-backend-mtue.onrender.com/api/appointments",
+          `${import.meta.env.VITE_API_URL}/api/appointments`,
           { withCredentials: true }
         );
-        console.log("data", res.data)
         setAppointments(res.data);
       } catch (err) {
         console.error(
@@ -59,7 +57,6 @@ function ClinicAdminDashboard() {
 
     return () => clearInterval(interval);
   }, []);
-
   const formatTimePH = (timeStr) => {
     if (!timeStr) return "";
 
