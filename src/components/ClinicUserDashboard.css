@@ -297,3 +297,97 @@
 .message-bottom p {
   padding: 5px;
 }
+@media (max-width: 767px) {
+  .clinic-user-dashboard-bottom-calendar {
+    position: absolute;
+    top: 13%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .clinic-user-dashboard {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    background-color: white;
+  }
+  .clinic-user-dashboard-bottom-calendar-right-content {
+    width: 95%;
+    margin-top: -1px;
+    border-radius: 10px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 10px;
+    overflow-y: scroll;
+    max-height: 550px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .message {
+    position: absolute;
+    right: 2%;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    padding: 10px;
+    z-index: 5;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .clinic-setAppoint {
+    width: 95%;
+    margin-right: -20%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .clinic-user-dashboard-bottom-calendar {
+    position: absolute;
+    top: 13%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .clinic-user-dashboard {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    background-color: white;
+  }
+  .clinic-user-dashboard-bottom-calendar-right-content {
+    width: 95%;
+    margin-top: -1px;
+    border-radius: 10px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: 18px;
+    overflow-y: scroll;
+    max-height: 550px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .message {
+    position: absolute;
+    right: 2%;
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    padding: 10px;
+    z-index: 5;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .clinic-setAppoint {
+    width: 95%;
+    margin-right: -21%;
+  }
+}

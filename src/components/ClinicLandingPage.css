@@ -72,3 +72,57 @@
     padding: 12px;
   }
 }
+@media (max-width: 767px) {
+  .clinic-landing-page-main {
+    inset: 0;
+    display: flex;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-image: url("../assets/mobilelandingnew.svg");
+    min-height: 100vh;
+  }
+  .clinic-left button {
+    width: 60%;
+    max-width: 150px;
+    min-width: 120px;
+    padding: 20px;
+    border: none;
+    font-weight: bold;
+    color: rgb(94, 93, 93);
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 95%;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .clinic-landing-page-main {
+    inset: 0;
+    display: flex;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    background-image: url("../assets/tabletlanding.svg");
+    min-height: 100vh;
+  }
+  .clinic-left button {
+    width: 60%;
+    max-width: 250px;
+    min-width: 120px;
+    padding: 30px;
+    border: none;
+    font-weight: bold;
+    color: rgb(94, 93, 93);
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 78%;
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+}

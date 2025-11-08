@@ -89,3 +89,107 @@
   margin-top: 10px;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .clinic-signup-main {
+    inset: 0;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/signupmobile.svg");
+  }
+  .clinic-signup-form h1 {
+    display: none;
+  }
+  .clinic-signup-form {
+    flex: 1;
+    display: flex;
+    color: #c39e79;
+    margin-left: 11%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 58%;
+  }
+  .clinin-signup-input {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #c39e79;
+  }
+  .clinic-signup-form button {
+    width: 90%;
+    padding: 15px;
+    color: white;
+    border-radius: 25px;
+    background-color: #c39e79;
+    border: none;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  .signup-text {
+    display: flex;
+    color: white;
+    align-items: center;
+  }
+  .signup-checkbox label {
+    color: white;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .clinic-signup-main {
+    inset: 0;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/signuptablet.svg");
+  }
+  .clinic-signup-form h1 {
+    display: none;
+  }
+  .clinic-signup-form {
+    flex: 1;
+    display: flex;
+    color: #c39e79;
+    margin-left: 31%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30%;
+  }
+  .clinin-signup-input {
+    width: 180%;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #c39e79;
+  }
+  .clinic-signup-form button {
+    width: 150%;
+    padding: 20px;
+    color: white;
+    border-radius: 25px;
+    background-color: #c39e79;
+    border: none;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 18px;
+  }
+  .signup-text {
+    display: flex;
+    color: white;
+    align-items: center;
+  }
+  .signup-checkbox label {
+    color: white;
+  }
+}
