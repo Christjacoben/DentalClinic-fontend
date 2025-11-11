@@ -61,22 +61,32 @@
   width: 150px;
 }
 .clinic-user-info {
-  position: absolute;
-  width: 50%;
-  height: 60%;
-  top: 25%;
-  right: 25%;
-  z-index: 5;
-  border-radius: 15px;
-  background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1000 !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 10px !important;
+
+  /* dark backdrop */
+}
+.clinic-user-info > div {
+  position: relative !important;
+  width: min(780px, 92vw) !important; /* responsive width */
+  max-height: min(88vh, 92dvh) !important; /* fit within viewport */
+  overflow: auto !important; /* scroll inside modal if content overflows */
+  background: #fff !important;
+  border-radius: 12px !important;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+  padding: 16px !important;
 }
 .clinic-user-info-close-icon {
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  padding: 10px;
+  position: absolute !important;
+  top: 26% !important;
+  right: 21% !important;
+  z-index: 2 !important;
+  cursor: pointer;
 }
 .clinic-user-dashboard-bottom-calendar {
   position: absolute;
@@ -101,16 +111,26 @@
   border-radius: 10px;
 }
 .clinic-setAppoint {
-  position: absolute;
-  z-index: 5;
-  top: 25%;
-  right: 23%;
-  width: 50%;
-  height: 60%;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  position: fixed !important; /* cover the whole screen */
+  inset: 0 !important;
+  z-index: 1000 !important;
+  display: grid !important; /* easy centering */
+  place-items: center !important;
+  padding: 10px;
+  /* gutter on small screens */
+  /* backdrop */
+}
+
+/* Treat the FIRST child <div> inside as the modal panel */
+.clinic-setAppoint > div {
+  position: relative !important;
+  width: min(310px, 92vw) !important; /* fluid width */
+  max-height: min(88vh, 92dvh) !important; /* never exceed viewport */
+  overflow: auto !important; /* scroll inside if needed */
+  background: #fff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+  padding: 16px !important;
 }
 .clinic-user-dashboard-bottom-calendar-left-content {
   width: 90%;
@@ -339,11 +359,26 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+  .clinic-user-info-close-icon {
+    position: absolute !important;
+    top: 1% !important;
+    right: 5% !important;
+    z-index: 2 !important;
+    cursor: pointer;
+  }
+  .clinic-user-info-close-icon-info {
+    position: absolute !important;
+    top: 20% !important;
+    right: 5% !important;
+    z-index: 2 !important;
+    cursor: pointer;
+  }
   .clinic-setAppoint {
     width: 95%;
     margin-right: -20%;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .clinic-user-dashboard-bottom-calendar {
     position: absolute;
