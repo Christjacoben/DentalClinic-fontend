@@ -1,19 +1,24 @@
 .clinic-user-info-container {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
+  position: static !important; /* remove absolute fill */
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
 }
 .clinic-user-info-top {
   display: flex;
   justify-content: center;
 }
 .clinic-user-info-top img {
-  width: 50%;
+  display: block !important;
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  width: clamp(120px, 40vw, 250px) !important;
 }
 .clinic-user-info-bottom {
-  flex: 1;
-  display: flex;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important; /* two columns on wide */
+  gap: 16px !important;
 }
 .clinic-user-info-bottom-right {
   flex: 1;
@@ -68,13 +73,20 @@
   font-weight: bold;
   color: #c39e79;
 }
+@media (max-width: 767px) {
+  .clinic-user-info-bottom {
+    grid-template-columns: 1fr !important;
+  }
+
+  .clinic-user-info > div {
+    width: 85vw !important;
+    max-height: 90vh !important;
+  }
+}
+/* Buttons adjust automatically */
 .clinic-user-info-bottom-right-items button {
-  width: 30%;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  background-color: #c39e79;
-  color: white;
-  margin-left: 60%;
-  font-weight: bold;
+  width: 100% !important;
+  max-width: 200px !important;
+  margin: 20px auto 0 !important;
+  display: block !important;
 }
