@@ -67,7 +67,7 @@
   display: grid !important;
   place-items: center !important;
   padding: 10px !important;
-
+  background: rgba(0, 0, 0, 0.35) !important;
   /* dark backdrop */
 }
 .clinic-user-info > div {
@@ -82,6 +82,13 @@
   padding: 16px !important;
 }
 .clinic-user-info-close-icon {
+  position: absolute !important;
+  top: 26% !important;
+  right: 21% !important;
+  z-index: 2 !important;
+  cursor: pointer;
+}
+.clinic-user-info-close-icon-info {
   position: absolute !important;
   top: 26% !important;
   right: 21% !important;
@@ -371,6 +378,7 @@
     top: 20% !important;
     right: 5% !important;
     z-index: 2 !important;
+    color: grey !important;
     cursor: pointer;
   }
   .clinic-setAppoint {
