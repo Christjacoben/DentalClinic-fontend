@@ -81,7 +81,7 @@
     background-position: center;
     background-repeat: no-repeat;
     justify-content: space-between;
-    background-image: url("../assets/newMobileLanding.svg");
+    background-image: url("../assets/onemobilelanding.png");
     min-height: 100vh;
   }
   .clinic-left button {
@@ -108,7 +108,7 @@
     background-position: center;
     background-repeat: no-repeat;
     justify-content: space-between;
-    background-image: url("../assets/tabletlanding.svg");
+    background-image: url("../assets/twomobilelanding.png");
     min-height: 100vh;
   }
   .clinic-left button {
