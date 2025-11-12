@@ -13,7 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 import moment from "moment";
 import ClinicMessage from "../assets/clinic-message.svg";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import SideBarLogo from "../assets/finalTransparentLogo.svg";
+import SideBarLogo from "../assets/finalNewTransparentLogo.svg";
 import { useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import ClinicSetAppointment from "./ClinicSetAppointment";
