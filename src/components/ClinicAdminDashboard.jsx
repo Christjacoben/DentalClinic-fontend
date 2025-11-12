@@ -16,7 +16,7 @@ import ManagePatient from "./ManagePatient";
 import ClinicReport from "./ClinicReport";
 import ManageUser from "./ManageUser";
 import BackupAndRestore from "./BackupAndRestore";
-import ClinicSideBarLogo from "../assets/finalTransparentLogo.svg";
+import ClinicSideBarLogo from "../assets/finalNewTransparentLogo.svg";
 import { useState, useEffect } from "react";
 import AllAppointment from "../assets/all-appointment-icon.svg";
 import NotConfirm from "../assets/not-confirm-icon.svg";
