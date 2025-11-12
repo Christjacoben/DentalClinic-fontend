@@ -165,7 +165,7 @@
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/onemobilelanding.png");
+    background-image: url("../assets/newMobileLanding.svg");
     min-height: 100vh;
   }
   .clinic-login-form {
@@ -220,7 +220,7 @@
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url("../assets/twomobilelanding.png");
+    background-image: url("../assets/tabletlanding.svg");
     min-height: 100vh;
   }
   .clinic-login-form {
