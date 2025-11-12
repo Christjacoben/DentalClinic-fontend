@@ -81,7 +81,7 @@
     background-position: center;
     background-repeat: no-repeat;
     justify-content: space-between;
-    background-image: url("../assets/onemobilelanding.png");
+    background-image: url("../assets/bagongMobilelandingPage.svg");
     min-height: 100vh;
   }
   .clinic-left button {
@@ -108,7 +108,7 @@
     background-position: center;
     background-repeat: no-repeat;
     justify-content: space-between;
-    background-image: url("../assets/twomobilelanding.png");
+    background-image: url("../assets/bagongTabletlandingPage.svg");
     min-height: 100vh;
   }
   .clinic-left button {
