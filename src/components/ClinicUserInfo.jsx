@@ -55,24 +55,6 @@ function ClinicUserInfo({ user }) {
           <div className="clinic-user-info-bottom-left-items">
             <p>FIRST NAME: {user.name}</p>
           </div>
-          <div className="clinic-user-info-bottom-left-items">
-            <label htmlFor="address-input" id="address-label">
-              ADDRESS:
-            </label>
-            {user.address ? (
-              <span>{user.address}</span>
-            ) : (
-              <input
-                type="text"
-                id="address-input"
-                name="address"
-                value={clinicUserData.address}
-                onChange={handleClinicDataChangeInput}
-              />
-            )}
-          </div>
-        </div>
-        <div className="clinic-user-info-bottom-right">
           <div className="clinic-user-info-bottom-right-items">
             <label htmlFor="last-name-input" id="last-name-label">
               Last Name:
@@ -89,6 +71,25 @@ function ClinicUserInfo({ user }) {
               />
             )}
           </div>
+        </div>
+        <div className="clinic-user-info-bottom-right">
+           <div className="clinic-user-info-bottom-left-items">
+            <label htmlFor="address-input" id="address-label">
+              ADDRESS:
+            </label>
+            {user.address ? (
+              <span>{user.address}</span>
+            ) : (
+              <input
+                type="text"
+                id="address-input"
+                name="address"
+                value={clinicUserData.address}
+                onChange={handleClinicDataChangeInput}
+              />
+            )}
+          </div>
+         
           <div className="clinic-user-info-bottom-right-items">
             <label htmlFor="contact-input" id="contact-label">
               Contact No#:
