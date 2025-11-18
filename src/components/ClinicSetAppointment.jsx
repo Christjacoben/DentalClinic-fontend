@@ -107,9 +107,11 @@ function ClinicSetAppointment({ selectedDate, user }) {
           {user && (
             <>
               <p>First Name: {user.name}</p>
+                <p>Last Name: {user.lastName}</p>
+                 <p>Contact: {user.contact}</p>
               <p>Address: {user.address}</p>
 
-              <p>Contact: {user.contact}</p>
+           
             </>
           )}
           {selectedDate && (
@@ -124,7 +126,7 @@ function ClinicSetAppointment({ selectedDate, user }) {
         </div>
         {user && (
           <div className="set-appointment-main-bottom">
-            <p>Last Name: {user.lastName}</p>
+          
             <div className="set-appointment-main-bottom-items">
               <p style={{ marginTop: "20px" }}>Time:</p>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
