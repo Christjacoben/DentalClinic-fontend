@@ -83,8 +83,8 @@
 }
 .clinic-user-info-close-icon {
   position: absolute !important;
-  top: 26% !important;
-  right: 21% !important;
+  top: 5% !important;
+  right: 5% !important;
   z-index: 2 !important;
   cursor: pointer;
 }
@@ -131,7 +131,7 @@
 /* Treat the FIRST child <div> inside as the modal panel */
 .clinic-setAppoint > div {
   position: relative !important;
-  width: min(310px, 92vw) !important; /* fluid width */
+  width: min(710px, 92vw) !important; /* fluid width */
   max-height: min(88vh, 92dvh) !important; /* never exceed viewport */
   overflow: auto !important; /* scroll inside if needed */
   background: #fff !important;
@@ -325,6 +325,16 @@
   padding: 5px;
 }
 @media (max-width: 767px) {
+  .clinic-setAppoint > div {
+    position: relative !important;
+    width: min(310px, 92vw) !important; /* fluid width */
+    max-height: min(88vh, 92dvh) !important; /* never exceed viewport */
+    overflow: auto !important; /* scroll inside if needed */
+    background: #fff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+    padding: 16px !important;
+  }
   .clinic-user-dashboard-bottom-calendar {
     position: absolute;
     top: 13%;
@@ -405,6 +415,13 @@
     flex-direction: column;
     background-color: white;
   }
+  .clinic-user-info-close-icon {
+    position: absolute !important;
+    top: 5% !important;
+    right: 3% !important;
+    z-index: 2 !important;
+    cursor: pointer;
+  }
   .clinic-user-dashboard-bottom-calendar-right-content {
     width: 95%;
     margin-top: -1px;
@@ -432,5 +449,15 @@
   .clinic-setAppoint {
     width: 95%;
     margin-right: -21%;
+  }
+  .clinic-setAppoint > div {
+    position: relative !important;
+    width: min(710px, 92vw) !important; /* fluid width */
+    max-height: min(88vh, 92dvh) !important; /* never exceed viewport */
+    overflow: auto !important; /* scroll inside if needed */
+    background: #fff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+    padding: 16px !important;
   }
 }
