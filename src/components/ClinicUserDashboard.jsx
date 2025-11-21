@@ -201,7 +201,7 @@ function ClinicUserDashboard() {
                   className="clinic-user-dashboard-bottom-big-calendar-left"
                   popup
                   selectable
-                  longPressThreshold={100}
+                  longPressThreshold={1}
                   onSelectSlot={(slotInfo) => {
                     const date =
                       slotInfo.start instanceof Date
